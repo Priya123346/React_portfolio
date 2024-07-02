@@ -24,7 +24,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://github.com/Priya123346/React_portfolio",
+  "homepage": "https://Priya123346.github.io/React_portfolio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

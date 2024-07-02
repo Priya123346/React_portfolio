@@ -10,7 +10,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <BrowserRouter basename='/Priya123346/React_portfolio'>
+    <BrowserRouter basename='/React_portfolio'>
       <div className="App">
         <NavBar />
         <Routes>
