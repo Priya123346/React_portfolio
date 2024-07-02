@@ -33,7 +33,7 @@ export const Skills=()=>{
       };
 
       return (
-        <section className='skill' id='skills'>
+        <section className='skill' id='skills' style={{marginTop:'100px'}}>
             <Container>
                 <Row>
                     <Col>
@@ -51,7 +51,7 @@ export const Skills=()=>{
                             </div>
                             <div className='item'>
                                 <img src={web} alt="web image"/>
-                                <h5>Web Development</h5>
+                                <h5>Web Dev</h5>
                             </div>
                             <div className='item'>
                                 <img src={react} alt="react image"/>

@@ -28,7 +28,7 @@ export const Projects = () => {
   ];
 
   return (
-    <section className="project" id="projects">
+    <section className="project" id="projects" style={{marginTop:'50px'}}>
       <Container>
         <Row>
           <Col size={12}>

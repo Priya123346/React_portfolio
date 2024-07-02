@@ -50,7 +50,7 @@ export const Banner=()=>{
         <span className="tagline">Welcome to my Portfolio website</span>
         <h1>{"I'm Priya Kotagiriwar, a "}
             <span className="wrap">{text}</span></h1>
-        <button className="vvd"><Nav.Link href='#connect' ><span>Let’s Connect</span><ArrowRightCircle size={25}/></Nav.Link></button>
+        <button className="vvd"><Nav.Link href='/connect' ><span>Let’s Connect</span><ArrowRightCircle size={25}/></Nav.Link></button>
         </Col>    
         <Col xs={12} md={6} xl={5}>
         <img src={headerImg} alt="Header description"/>
