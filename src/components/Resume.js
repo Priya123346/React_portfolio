@@ -1,5 +1,5 @@
 import React from 'react';
-import resume_priya from '../assets/priya_resume.pdf';
+import resume_priya from '../assets/Priya_K_SWE_Resume.pdf';
 export default function Resume(){
     return (
         <iframe src={resume_priya} className='resume' 
