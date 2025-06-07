@@ -1,8 +1,7 @@
-import { useState,useEffect } from "react";
-import { Container,Row,Col } from "react-bootstrap";
-import { ArrowRightCircle } from "react-bootstrap-icons";
+import { useEffect, useState } from "react";
+import { Col, Container, Row } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.png";
-import Nav from 'react-bootstrap/Nav';
+
 export const Banner=()=>{
     const [loopNum,setLoopNum]=useState(0);
     const [isDeleting,setIsDeleting]=useState(false);
@@ -50,7 +49,7 @@ export const Banner=()=>{
         <span className="tagline">Welcome to my Portfolio website</span>
         <h1>{"I'm Priya Kotagiriwar, a "}
             <span className="wrap">{text}</span></h1>
-        <button className="vvd"><Link to='/connect' ><span>Let’s Connect</span><ArrowRightCircle size={25}/></Link></button>
+        {/* <button className="vvd"><Link to='/connect' ><span>Let’s Connect</span><ArrowRightCircle size={25}/></Link></button> */}
 
         </Col>    
         <Col xs={12} md={6} xl={5}>

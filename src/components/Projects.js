@@ -1,29 +1,57 @@
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/organ.jpeg";
-import projImg2 from "../assets/img/home.jpeg";
-import projImg3 from "../assets/img/temp.jpeg";
-import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
+import { Col, Container, Row, Tab } from "react-bootstrap";
 import TrackVisibility from 'react-on-screen';
+import colorSharp2 from "../assets/img/color-sharp2.png";
+import projImg6 from "../assets/img/credit.jpeg";
+import projImg2 from "../assets/img/cust_seg.jpg";
+import projImg5 from "../assets/img/file_compress.png";
+import projImg1 from "../assets/img/portfolio.png";
+import projImg3 from "../assets/img/temp.jpeg";
+import projImg4 from "../assets/img/traffic.jpeg";
+import { ProjectCard } from "./ProjectCard";
 
 export const Projects = () => {
 
   const projects = [
     {
-      title: "Organ donation",
-      description: "A website which is an interface between donors and receivers of organs",
+      title: "React Portfolio",
+      description: "Developed a personal React portfolio highlighting projects with clean UI and modern design.",
       imgUrl: projImg1,
+      github: "https://github.com/Priya123346/React_portfolio",
+      demo: "https://priya123346.github.io/React_portfolio/",
     },
     {
-      title: "Home it up",
-      description: "To digitalize routine tasks and manage tasks in efficient way.",
+      title: "Clustering Analysis-Online Retail Casestudy",
+      description: " focuses on customer segmentation using unsupervised learning techniques like K-Means and Gaussian Mixture Models on an Online Retail dataset. ",
       imgUrl: projImg2,
+      github: "https://github.com/Priya123346/Clustering-Analysis_Online-Retail-Case-Study",
+      // demo:''
+    },
+    {
+      title: "Smart Traffic Management System",
+      description: "developed using Python and Pygame, simulating an adaptive signal control mechanism.",
+      imgUrl: projImg4,
+      github: "https://github.com/Priya123346/Traffic_management_simulation",
+    },
+    {
+      title: "FileEase",
+      description: "a file compression tool built using Django and powered by the Huffman Coding Algorithm!",
+      imgUrl: projImg5,
+      github: "https://github.com/Priya123346/File_Compression",
+      demo: "https://www.linkedin.com/posts/priya-kotagiriwar_django-python-filecompression-activity-7279157288022560768-zH7i?utm_source=share&utm_medium=member_desktop&rcm=ACoAAELGrPABaILn5NCOFaBI7Nfy28bWh9VYBQc",
+    },
+    {
+      title: "Credit Card Fraud detection",
+      description: "assists financial institutions and credit card companies in identifying potentially fraudulent activities in real-time",
+      imgUrl: projImg6,
+      github: "https://github.com/Priya123346/Credit_card_fraud_detection",
     },
     {
       title: "Temperature converter",
       description: "A website which converts temperature from celsius to fahrenheit and kelvin and vice-versa",
       imgUrl: projImg3,
+      github: "https://github.com/Priya123346/Temperature_converter",
+      demo: "https://priya123346.github.io/Temperature_converter/",
     },
   ];
 
@@ -41,17 +69,7 @@ export const Projects = () => {
                 <h3>Hover over them to know more about the project</h3>
                 <br></br>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  {/* <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                    <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                    </Nav.Item>
-                  </Nav> */}
+                  
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
                       <Row>
@@ -67,12 +85,6 @@ export const Projects = () => {
                         }
                       </Row>
                     </Tab.Pane>
-                    {/* <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane> */}
                   </Tab.Content>
                 </Tab.Container>
               </div>}
